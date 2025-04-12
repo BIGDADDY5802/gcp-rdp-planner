@@ -110,6 +110,60 @@ Target Tags:
  6. Notes & Observations
 ======================
 
+======================
+ 7. cloudnat
+======================
+
+Name:
+
+======================
+ 8. instance templates
+======================
+
+Name:
+
+======================
+ 9. load balancer
+======================
+
+Name:
+
+Network tag:
+
+======================
+ 8. instance groups
+======================
+
+Name:
+
+heathcheck: 
+
+scope: 
+
+after instances are provisioned make sure you see your tag in an instance
+
+▶ Firewall Rule
+---------------------------------
+
+Source Tags: 
+
+Protocols/Ports: tcp/ 80
+
+Source IP Range: 0.0.0.0/0
+
+======================
+ 8. load balancer
+======================
+
+Name:
+
+frontend: 
+
+proxy-only-subnet: >name< >subnet<
+
+leave ip address as ephemeral. >done<
+
+backend:
 
 
 ______________________________________________________
